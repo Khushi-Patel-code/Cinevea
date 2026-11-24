@@ -1,0 +1,65 @@
+/* Light mode is an explicit component theme: neutral paper, dark ink and dark ochre links.
+   Ticket artwork/print colours retain their own stylesheet. */
+html[data-theme="light"] .display-settings>summary,
+html[data-theme="light"] .icon-button,
+html[data-theme="light"] .text-button{color:var(--text)}
+html[data-theme="light"] .icon-button:hover,
+html[data-theme="light"] .secondary-button:hover:not(:disabled){background:var(--raised);color:var(--text);border-color:var(--line)}
+html[data-theme="light"] .secondary-button,
+html[data-theme="light"] .account-avatar,
+html[data-theme="light"] .account-toggle:hover,
+html[data-theme="light"] .stepper button{background:var(--raised);color:var(--text);border-color:var(--line)}
+html[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]),
+html[data-theme="light"] select,
+html[data-theme="light"] textarea{background:var(--surface);color:var(--text);border-color:var(--line)}
+html[data-theme="light"] .search-field input{background:transparent}
+html[data-theme="light"] .auth-submit,
+html[data-theme="light"] .primary-button,
+html[data-theme="light"] .composer-send-button{color:var(--action-text)}
+html[data-theme="light"] .eyebrow,
+html[data-theme="light"] .movie-genre,
+html[data-theme="light"] .movie-cta,
+html[data-theme="light"] .location-icon,
+html[data-theme="light"] .choice-card>svg{color:#805000}
+html[data-theme="light"] .location-card:hover,
+html[data-theme="light"] .movie-card:hover,
+html[data-theme="light"] .choice-card:hover{background:var(--raised);border-color:var(--line)}
+html[data-theme="light"] .choice-card[aria-pressed="true"],
+html[data-theme="light"] .segmented button[aria-pressed="true"]{background:var(--accent);color:var(--ink)}
+html[data-theme="light"] .recommendation-tools,
+html[data-theme="light"] .recommendation-result,
+html[data-theme="light"] .notice:not(.notice-error){background:var(--raised);color:var(--text);border-color:var(--line)}
+html[data-theme="light"] .recommendation-tools>summary,
+html[data-theme="light"] .selected-seat-text,
+html[data-theme="light"] .row-label,
+html[data-theme="light"] .seat:not(.seat-selected){color:var(--text)}
+html[data-theme="light"] .journey-progress li.current,
+html[data-theme="light"] .journey-progress li.complete{color:#805000!important}
+html[data-theme="light"] .assistant-control-btn,
+html[data-theme="light"] .composer-icon-button,
+html[data-theme="light"] .voice-info summary,
+html[data-theme="light"] .carousel-arrow{color:var(--text);background:transparent;border-color:var(--line)}
+html[data-theme="light"] .from-user{background:transparent}
+html[data-theme="light"] .hands-free-panel,
+html[data-theme="light"] .heard-transcript{background:var(--surface);color:var(--text)}
+html[data-theme="light"] .heard-transcript p,
+html[data-theme="light"] .heard-transcript span,
+html[data-theme="light"] .voice-feedback,
+html[data-theme="light"] .voice-settings .small-note{color:var(--text)}
+/* Only the form changes on sign-in; the reel background stays continuous. */
+html[data-theme="light"] .auth-page{background:#080d17}
+html[data-theme="light"] .auth-page:before{inset:0;opacity:.6;background-position:center bottom;background-size:cover}
+html[data-theme="light"] .auth-page:after{inset:0;background:linear-gradient(90deg,#080d1755,transparent 50%,#080d1755)}
+html[data-theme="light"] .auth-story h1,html[data-theme="light"] .auth-brand{color:#f5f7fb}
+html[data-theme="light"] .auth-display .theme-toggle{color:#f5f7fb;background:#0f1827;border-color:#5c6c81}
+html[data-theme="light"] .auth-card{background:#fffdfa;border-color:#69717b;box-shadow:0 24px 70px #0004}
+html[data-theme="light"][data-mono="true"] .eyebrow,
+html[data-theme="light"][data-mono="true"] .movie-genre,
+html[data-theme="light"][data-mono="true"] .movie-cta,
+html[data-theme="light"][data-mono="true"] .location-icon,
+html[data-theme="light"][data-mono="true"] .choice-card>svg,
+html[data-theme="light"][data-mono="true"] .journey-progress li.current,
+html[data-theme="light"][data-mono="true"] .journey-progress li.complete{color:#333!important}
+@media(max-width:760px){
+ html[data-theme="light"] .auth-page:before{background-size:auto 100%;background-position:left bottom;opacity:.35}
+}
